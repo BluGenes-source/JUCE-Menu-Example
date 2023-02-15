@@ -30,6 +30,7 @@ void MainComponent::resized()
 
 juce::StringArray MainComponent::getMenuBarNames()
 {
+	/** The names in the list will correspond to the row position in the array, 01,02,03 etc. */
     return { "File", "Edit", "View" };
 }
 
