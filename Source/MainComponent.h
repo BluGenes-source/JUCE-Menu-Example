@@ -24,7 +24,7 @@
 
 
 
-
+//expiremental
 struct Signature
 {
     Signature();
@@ -82,6 +82,6 @@ private:
 
     Signature sig;
     std::unique_ptr<MenuBarComponent> menuBar;
-    std::vector<Signature> signatures = { {3, 4}, {4, 4}, {6, 8}, {8, 8}, {9, 8}, {12, 8} };
+    std::vector<Signature> signatures = { {3, 4}, {4, 4}, {6, 8}, {8, 8}, {9, 8}, {12, 8} }; 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

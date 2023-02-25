@@ -80,14 +80,14 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 	else if (topLevelMenuIndex == 3)
 	{
 		int index = 1;
-	//	auto makeItem = [&](const Signature& sig)
-	//	for (const auto& sig : signatures)
-	//		makeItem(sig);
+		auto makeItem = [&](const Signature& sig); // this does not compile!
+		for (const auto& sig : signatures)
+			makeItem(sig);
 		
 		
-		menu.addItem(1, "2/4");
-		menu.addItem(2, "4/4", true,true);
-		menu.addItem(3, "6/8");
+	//	menu.addItem(1, "2/4");
+	//	menu.addItem(2, "4/4", true,true);
+	//	menu.addItem(3, "6/8");
 	}
 
 
