@@ -31,7 +31,7 @@ void MainComponent::resized()
 juce::StringArray MainComponent::getMenuBarNames()
 {
 	/** The names in the list will correspond to the row position in the array, 01,02,03 etc. */
-    return { "File", "Edit", "View" };
+    return { "File", "Edit", "View", "Signature"};
 }
 
 juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const String& /*menuName*/)
@@ -64,6 +64,13 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 		menu.addSeparator();
 		menu.addItem(3, "Full Screen");
 	}
+	else if (topLevelMenuIndex == 3)
+	{
+		menu.addItem(1, "2/4");
+		menu.addItem(2, "4/4", true,true);
+		menu.addItem(3, "6/8");
+	}
+
 
 	return menu;
 }
