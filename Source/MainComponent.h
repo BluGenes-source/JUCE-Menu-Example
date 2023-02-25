@@ -27,7 +27,7 @@
 //expiremental
 struct Signature
 {
-    Signature();
+   
 	Signature(int n, int d) : num(n), den(d) {}
 	int num, den;
 	const bool operator==(const Signature& other) { return num == other.num && den == other.den; }
@@ -80,7 +80,7 @@ private:
     */
 
 
-    Signature sig;
+    //Signature sig;
     std::unique_ptr<MenuBarComponent> menuBar;
     std::vector<Signature> signatures = { {3, 4}, {4, 4}, {6, 8}, {8, 8}, {9, 8}, {12, 8} }; 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)

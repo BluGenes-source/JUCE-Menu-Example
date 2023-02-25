@@ -80,9 +80,17 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 	else if (topLevelMenuIndex == 3)
 	{
 		int index = 1;
-		auto makeItem = [&](const Signature& sig); // this does not compile!
-		for (const auto& sig : signatures)
-			makeItem(sig);
+	
+		//for (const auto& sig : signatures)
+		//{
+		//	menu.addItem(index, sig.toString());
+		//	index++;
+		//}
+		
+		
+		//	auto makeItem = [&](const Signature& signatures) // this does not compile!
+	//	for (const auto& sig : signatures)
+	//		makeItem(sig);
 		
 		
 	//	menu.addItem(1, "2/4");
@@ -101,10 +109,5 @@ void MainComponent::menuItemSelected(int menuItemID, int topLevelMenuIndex)
 		JUCEApplication::getInstance()->systemRequestedQuit();
 	}
 	//else if (topLevelMenuIndex == 1 && menuItemID == 1) {}
-
-}
-
-Signature::Signature()
-{
 
 }
