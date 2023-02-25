@@ -13,6 +13,32 @@
 
 #include <JuceHeader.h>
 
+//struct Signature
+//{
+//
+//	Signature(int n, int d) : num(n), den(d) {}
+//	int num, den;
+//	const bool operator==(const Signature& other) { return num == other.num && den == other.den; }
+//	juce::String toString() const { return juce::String(num) + "/" + juce::String(den); }
+//};
+
+
+
+
+struct Signature
+{
+    Signature();
+	Signature(int n, int d) : num(n), den(d) {}
+	int num, den;
+	const bool operator==(const Signature& other) { return num == other.num && den == other.den; }
+	juce::String toString() const { return juce::String(num) + "/" + juce::String(den); }
+};
+
+
+
+
+
+
 /**
  * You must also include the MenuBarModel so that the constructor will call the override method getMenuBarNames to set up the menu.
  */
@@ -52,6 +78,10 @@ private:
      * MenuBarModel object that is passed to its constructor to determine the names of the menus, the menu items, and the actions
      * that will be performed when the user selects a menu item.
     */
+
+
+    Signature sig;
     std::unique_ptr<MenuBarComponent> menuBar;
+    std::vector<Signature> signatures = { {3, 4}, {4, 4}, {6, 8}, {8, 8}, {9, 8}, {12, 8} };
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

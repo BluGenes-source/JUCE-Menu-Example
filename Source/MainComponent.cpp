@@ -1,10 +1,23 @@
 #include "MainComponent.h"
 
 //==============================================================================
-MainComponent::MainComponent()
+
+
+
+
+
+
+
+
+
+MainComponent::MainComponent() 
 {
+	
+	
+	
 	menuBar.reset(new MenuBarComponent(this));
 	addAndMakeVisible(menuBar.get());
+
     setSize (600, 400);
 }
 
@@ -66,6 +79,12 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 	}
 	else if (topLevelMenuIndex == 3)
 	{
+		int index = 1;
+	//	auto makeItem = [&](const Signature& sig)
+	//	for (const auto& sig : signatures)
+	//		makeItem(sig);
+		
+		
 		menu.addItem(1, "2/4");
 		menu.addItem(2, "4/4", true,true);
 		menu.addItem(3, "6/8");
@@ -82,5 +101,10 @@ void MainComponent::menuItemSelected(int menuItemID, int topLevelMenuIndex)
 		JUCEApplication::getInstance()->systemRequestedQuit();
 	}
 	//else if (topLevelMenuIndex == 1 && menuItemID == 1) {}
+
+}
+
+Signature::Signature()
+{
 
 }
