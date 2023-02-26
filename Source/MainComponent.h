@@ -38,6 +38,8 @@ enum GridType // can be used to set the grid type size.. not used in this exampl
    The toString method is used to convert the signature to a string that can be displayed in the menu item.
 
    You could use this technique for any menu item that would need to have a check box selected shown.
+
+   many thanks to @daniel and @Normalised on the JUCE Discord server for helping me with this.
  */
 struct Signature
 {
