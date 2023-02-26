@@ -19,6 +19,11 @@ You must use a std::unique_ptr for the MenuBarComponent and include the MenubarM
 std::unique_ptr<MenuBarComponent> menuBar;
 ```
 
+When populating the Time Signature menu choice, it uses a structure `struct Signature` with an operator overload to test whether the slected item is currently the last selected item. 
+The operation returns a true for the menu.additem() method which allows a check mark to be shown next to the menu item.
+
+
+
 ## Overrides
 
 These are the three methods that must be overridden:
@@ -30,3 +35,5 @@ These are the three methods that must be overridden:
 ```
 
 Once the object is created, the menu bar will be populated with the names returned by `getMenuBarNames()`. When the user selects a menu item, the `menuItemSelected()` method will be called with the ID of the selected item and the index of the menu that it was in.
+
+many thanks to @daniel and @Normalised on the JUCE Discord server for helping me with this.

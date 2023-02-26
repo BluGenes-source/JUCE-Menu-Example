@@ -13,19 +13,9 @@
 
 #include <JuceHeader.h>
 
-//struct Signature
-//{
-//
-//	Signature(int n, int d) : num(n), den(d) {}
-//	int num, den;
-//	const bool operator==(const Signature& other) { return num == other.num && den == other.den; }
-//	juce::String toString() const { return juce::String(num) + "/" + juce::String(den); }
-//};
-
 enum GridType // can be used to set the grid type size.. not used in this example
 {
     bar = 1,half,quarter,eighth,sixteenth,thirtysecond,rest,sixtyfourth
-
 };
 
 
@@ -49,11 +39,6 @@ struct Signature
 	bool operator==( const Signature& other) const { return num == other.num && den == other.den; }
 	juce::String toString() const { return juce::String(num) + "/" + juce::String(den); }
 };
-
-
-
-
-
 
 /**
  * You must also include the MenuBarModel so that the constructor will call the override method getMenuBarNames to set up the menu.
@@ -79,8 +64,8 @@ public:
     StringArray getMenuBarNames() override;
     PopupMenu getMenuForIndex(int topLevelMenuIndex, const String& /*menuName*/) override;
     void menuItemSelected(int menuItemID, int topLevelMenuIndex) override;
-   int getGridType(int gridType);
-   void setGridType(int gridType);
+    int getGridType(int gridType);
+    void setGridType(int gridType);
 
 private:
     //==============================================================================

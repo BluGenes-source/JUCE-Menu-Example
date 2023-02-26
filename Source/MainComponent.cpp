@@ -6,13 +6,8 @@
 
 MainComponent::MainComponent() 
 {
-	
-	
-	
 	menuBar.reset(new MenuBarComponent(this));
 	addAndMakeVisible(menuBar.get());
-	// default signature
-	//Signature current{ 4,4 };
     setSize (600, 400);
 }
 
@@ -90,7 +85,6 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 	//	menu.addItem(3, "6/8");
 	}
 
-
 	return menu;
 }
 
@@ -105,45 +99,37 @@ void MainComponent::menuItemSelected(int menuItemID, int topLevelMenuIndex)
 	{
 		num = 2;
 		dem = 4;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 2)
 	{
 		num = 3;
 		dem = 4;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 3)
 	{
 		num = 4;
 		dem = 4;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 4)
 	{
 		num = 6;
 		dem = 8;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 5)
 	{
 		num = 8;
 		dem = 8;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 6)
 	{
 		num = 9;
 		dem = 8;
-		
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 7)
 	{
 		num = 12;
 		dem = 8;
-
 	}
-
 }
 
 int MainComponent::getGridType(int gridType)
@@ -157,34 +143,30 @@ int MainComponent::getGridType(int gridType)
 		// do something
 		break;
 	
-		case quarter:
+	case quarter:
 			// do something
-			break;
-        case eighth:
+		break;
+    case eighth:
 	       // do something
-	        break;
+        break;
 
 	case sixteenth:
 		  // do something
-		    break;	
+	    break;	
     case thirtysecond:
 	      // do something
-	       break;
+       break;
 	case sixtyfourth:
 		 // do something
-		  break;
-
+	  break;
 
 	default:
 		break;
 	}
-	
-	
-	
 	return gridType;
 }
 
 void MainComponent::setGridType(int gridType)
 {
-	gridType = gridType;
+	// do something
 }
