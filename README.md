@@ -36,4 +36,4 @@ These are the three methods that must be overridden:
 
 Once the object is created, the menu bar will be populated with the names returned by `getMenuBarNames()`. When the user selects a menu item, the `menuItemSelected()` method will be called with the ID of the selected item and the index of the menu that it was in.
 
-many thanks to @daniel and @Normalised on the JUCE Discord server for helping me with this.
+many thanks to @daniel and @Normalised on the The Audio Programmer Discord server for helping me with this.

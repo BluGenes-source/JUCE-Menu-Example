@@ -29,7 +29,7 @@ enum GridType // can be used to set the grid type size.. not used in this exampl
 
    You could use this technique for any menu item that would need to have a check box selected shown.
 
-   many thanks to @daniel and @Normalised on the JUCE Discord server for helping me with this.
+   many thanks to @daniel and @Normalised on the The Audio Programmer Discord server for helping me with this.
  */
 struct Signature
 {
