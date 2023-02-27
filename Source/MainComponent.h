@@ -81,11 +81,11 @@ private:
      * that will be performed when the user selects a menu item.
     */
 
-    /* the num and dem integers are used to populate the Signature current field in the the getMenuForIndex method*/
+    /* the num and den integers are used to populate the Signature current field in the the getMenuForIndex method*/
     int num = 4;
-    int dem = 4;
+    int den = 4;
 
-    Signature current{ num,dem }; //default
+    Signature current{ num,den }; //default
     //Signature sig;
     std::unique_ptr<MenuBarComponent> menuBar;
 

@@ -70,7 +70,7 @@ juce::PopupMenu MainComponent::getMenuForIndex(int topLevelMenuIndex, const Stri
 	else if (topLevelMenuIndex == 3)
 	{
 		
-		Signature current{ num, dem};
+		Signature current{ num, den};
 
 		int index = 1;
 			for (const auto& sig : signatures)
@@ -98,37 +98,37 @@ void MainComponent::menuItemSelected(int menuItemID, int topLevelMenuIndex)
 	else if (topLevelMenuIndex == 3 && menuItemID == 1)
 	{
 		num = 2;
-		dem = 4;
+		den = 4;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 2)
 	{
 		num = 3;
-		dem = 4;
+		den = 4;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 3)
 	{
 		num = 4;
-		dem = 4;
+		den = 4;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 4)
 	{
 		num = 6;
-		dem = 8;
+		den = 8;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 5)
 	{
 		num = 8;
-		dem = 8;
+		den = 8;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 6)
 	{
 		num = 9;
-		dem = 8;
+		den = 8;
 	}
 	else if (topLevelMenuIndex == 3 && menuItemID == 7)
 	{
 		num = 12;
-		dem = 8;
+		den = 8;
 	}
 }
 
