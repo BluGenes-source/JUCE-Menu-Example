@@ -94,7 +94,7 @@ void MainComponent::menuItemSelected(int menuItemID, int topLevelMenuIndex)
 	{
 		JUCEApplication::getInstance()->systemRequestedQuit();
 	}
-	//else if (topLevelMenuIndex == 1 && menuItemID == 1) {}
+	//else if (topLevelMenuIndex == 1 && menuItemID == 1) {}  // just work down the levels
 	else if (topLevelMenuIndex == 3 && menuItemID == 1)
 	{
 		num = 2;
