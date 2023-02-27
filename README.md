@@ -19,7 +19,7 @@ You must use a std::unique_ptr for the MenuBarComponent and include the MenubarM
 std::unique_ptr<MenuBarComponent> menuBar;
 ```
 
-When populating the Time Signature menu choice, it uses a structure `struct Signature` with an operator overload to test whether the slected item is currently the last selected item. 
+When populating the Time Signature menu choice, it uses a structure `struct Signature` with an operator overload to test whether the selected item is currently the last selected item. 
 The operation returns a true for the menu.additem() method which allows a check mark to be shown next to the menu item.
 
 
